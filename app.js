@@ -69,8 +69,8 @@ const hiddenSearch = document.querySelector(".hidden-search");
 const span = document.querySelector(".hidden-search span");
 
 //get movies based on search
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
   const searchValue = search.value.trim();
   console.log(searchValue);
   if (searchValue) {
@@ -80,5 +80,5 @@ form.addEventListener("submit", (event) => {
     search.value = "";
   } else {
     window.location.reload();
-  
+  }
 });
